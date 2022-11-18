@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-body:'Roboto', sans-serif;
+  --text-color: #E1E1E6;
+  --primary-color: rgba(9, 45, 56, 1);
+ 
+}
+
+body {
+  font-size: 1.6rem;
+  background-color:rgba(0, 0, 0, 1);
+  color: var(--text-color);
+}
+
+body * {
+  font-family: var(--ff-body);
+}
+
+header button {
+  background-color:rgba(0, 0, 0, 1) ;
+  margin-left: .8rem;
+
+  cursor: pointer;
+  transition: 1s;
+}
+
+header button:hover {
+  filter: brightness(1.2);
+}
+
+.no-favorites {
+  Width:85.5rem;
+  Height: 35.4rem ;
+}
+
+  .no-favorites {
+  display: flex;
+  align-items: center;
+  margin-left: 19.2rem;
+}
+
+.no-favorites p {
+  font-family: var(--ff-body);
+  font-size: 4rem;
+  font-style: bold;
+  color: #4E5455;
+  margin-left: 6rem;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 112rem; 
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 9rem 0 9rem 0;
+}
+
+.search {
+  display: flex;
+}
+
+#input-search {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  
+  width: 46.2rem;
+  height: 4.8rem;
+  color: #7C7C8A;
+  background-color: rgba(6, 24, 28, 1);
+  
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: .2rem;
+}
+
+table {
+  max-width: 100%; 
+
+  border-spacing: 0;
+  border: 3px solid #5c858eb7;
+  border-radius: 1.2rem;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+
+table tr td {
+  border-top: 1px solid #4a808c;
+}
+
+
+
+table th {
+  background-color: var(--primary-color);
+  width: 112rem;
+  height: 6.4rem;
+  
+}
+
+
+table tr:nth-child(even) {
+  background: #06181C;
+  
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+td.user a span {
+  color: #E1E1E6; 
+  font-family: var(--ff-body) ;
+  font-weight: 400;
+}
+
+td.Repositories {
+ text-align: right;
+}
+
+td.Followers {
+  text-align: right;
+}
+
+
+thead .Repositories-one {
+  text-align: right;
+}
+
+thead .followers-one {
+  text-align: right;
+}
+
+tbody .remove {
+ margin-left: 12.0rem;
+ 
+}
+
+td .remove {
+ background-color: none;
+ border: none;
+
+ color: #F75A68;
+ font-family: var(--ff-body);
+ font-weight: 700;
+ cursor: pointer;
+ transition: 1s;
+ background-color: rgba(6, 22, 27, 0);
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(6, 22, 27, 0.5);
+}
+
+td .remove:hover {
+  color: #f53243;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
